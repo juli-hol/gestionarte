@@ -46,7 +46,7 @@
       box-shadow: 0 32px 80px rgba(0,0,0,0.6);
     }
 
-    /* ── LEFT PANEL ── */
+    /* LEFT PANEL */
     .ga-left {
       flex: 1;
       padding: 48px;
@@ -57,22 +57,12 @@
       overflow: hidden;
       border-right: 0.5px solid var(--border-subtle);
     }
-
-    .ga-blob {
-      position: absolute;
-      border-radius: 50%;
-      pointer-events: none;
-    }
+    .ga-blob { position: absolute; border-radius: 50%; pointer-events: none; }
     .ga-blob-1 { width: 300px; height: 300px; background: rgba(201,169,110,0.07); top: -80px; left: -100px; }
     .ga-blob-2 { width: 200px; height: 200px; background: rgba(139,107,74,0.10); bottom: 30px; right: -60px; }
     .ga-blob-3 { width: 130px; height: 130px; border: 0.5px solid rgba(201,169,110,0.15); top: 200px; right: 70px; border-radius: 50%; }
 
-    .ga-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      z-index: 1;
-    }
+    .ga-logo { display: flex; align-items: center; gap: 10px; z-index: 1; }
     .ga-logo-icon {
       width: 38px; height: 38px;
       border: 1.5px solid var(--gold);
@@ -80,214 +70,157 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 19px;
     }
-    .ga-logo-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
-      color: var(--text-primary);
-      letter-spacing: 0.02em;
-    }
+    .ga-logo-name { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text-primary); letter-spacing: 0.02em; }
     .ga-logo-name span { color: var(--gold); }
 
     .ga-hero { z-index: 1; }
-    .ga-eyebrow {
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 18px;
-      opacity: 0.85;
-    }
-    .ga-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 38px;
-      line-height: 1.22;
-      color: var(--text-primary);
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
+    .ga-eyebrow { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; opacity: 0.85; }
+    .ga-title { font-family: 'Playfair Display', serif; font-size: 38px; line-height: 1.22; color: var(--text-primary); font-weight: 400; margin-bottom: 20px; }
     .ga-title em { font-style: italic; color: var(--gold); }
-    .ga-body {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.75;
-      max-width: 290px;
-      font-weight: 300;
-    }
+    .ga-body { font-size: 14px; color: var(--text-muted); line-height: 1.75; max-width: 290px; font-weight: 300; }
 
     .ga-features { z-index: 1; }
-    .ga-feature {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 13px;
-      color: var(--text-dim);
-      margin-bottom: 10px;
-    }
+    .ga-feature { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-dim); margin-bottom: 10px; }
     .ga-feature:last-child { margin-bottom: 0; }
-    .ga-dot {
-      width: 5px; height: 5px;
-      background: var(--gold);
-      border-radius: 50%;
-      flex-shrink: 0;
-      opacity: 0.65;
-    }
+    .ga-dot { width: 5px; height: 5px; background: var(--gold); border-radius: 50%; flex-shrink: 0; opacity: 0.65; }
 
-    /* ── RIGHT PANEL ── */
+    /* RIGHT PANEL */
     .ga-right {
-      width: 400px;
+      width: 420px;
       flex-shrink: 0;
-      padding: 48px 44px;
+      padding: 44px 44px;
       background: var(--bg-panel);
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    .ga-tabs {
-      display: flex;
-      border-bottom: 0.5px solid var(--border-subtle);
-      margin-bottom: 32px;
-    }
+    .ga-tabs { display: flex; border-bottom: 0.5px solid var(--border-subtle); margin-bottom: 28px; }
     .ga-tab {
-      flex: 1;
-      padding: 10px 0;
-      text-align: center;
-      font-size: 13px;
-      cursor: pointer;
-      color: var(--text-dimmer);
-      border: none;
-      border-bottom: 2px solid transparent;
-      margin-bottom: -0.5px;
-      background: none;
-      font-family: 'Inter', sans-serif;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      transition: color 0.2s;
+      flex: 1; padding: 10px 0; text-align: center; font-size: 13px; cursor: pointer;
+      color: var(--text-dimmer); border: none; border-bottom: 2px solid transparent;
+      margin-bottom: -0.5px; background: none; font-family: 'Inter', sans-serif;
+      font-weight: 500; letter-spacing: 0.04em; transition: color 0.2s;
     }
     .ga-tab:hover { color: var(--text-dim); }
-    .ga-tab.active {
-      color: var(--gold);
-      border-bottom-color: var(--gold);
-    }
+    .ga-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
 
     .ga-msg {
-      font-size: 13px;
-      padding: 10px 14px;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      display: none;
-      line-height: 1.5;
+      font-size: 13px; padding: 10px 14px; border-radius: 8px;
+      margin-bottom: 16px; display: none; line-height: 1.5;
     }
-    .ga-msg.error  { background: #2e1a1a; color: #c97070; border: 0.5px solid #4a2a2a; display: block; }
-    .ga-msg.success{ background: #1a2e1e; color: #6ab87a; border: 0.5px solid #2a4a30; display: block; }
+    .ga-msg.error   { background: #2e1a1a; color: #c97070; border: 0.5px solid #4a2a2a; display: block; }
+    .ga-msg.success { background: #1a2e1e; color: #6ab87a; border: 0.5px solid #2a4a30; display: block; }
+    .ga-msg.info    { background: #1e2030; color: #7a9ec9; border: 0.5px solid #2a3a50; display: block; }
 
-    .ga-form { display: flex; flex-direction: column; gap: 16px; }
+    .ga-form { display: flex; flex-direction: column; gap: 14px; }
     .ga-form.hidden { display: none; }
 
     .ga-row { display: flex; gap: 12px; }
     .ga-row .ga-field { flex: 1; }
-
     .ga-field { display: flex; flex-direction: column; gap: 6px; }
-    .ga-label {
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      font-weight: 500;
-    }
+    .ga-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); font-weight: 500; }
+
     .ga-input {
-      background: var(--bg-input);
-      border: 0.5px solid var(--border-input);
-      border-radius: 8px;
-      padding: 11px 14px;
-      font-size: 14px;
-      color: var(--text-secondary);
-      font-family: 'Inter', sans-serif;
-      outline: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      width: 100%;
+      background: var(--bg-input); border: 0.5px solid var(--border-input);
+      border-radius: 8px; padding: 11px 14px; font-size: 14px;
+      color: var(--text-secondary); font-family: 'Inter', sans-serif;
+      outline: none; transition: border-color 0.2s, box-shadow 0.2s; width: 100%;
     }
-    .ga-input:focus {
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(201,169,110,0.12);
-    }
+    .ga-input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,169,110,0.12); }
     .ga-input::placeholder { color: var(--text-dimmer); }
 
     .ga-btn {
-      border: none;
-      border-radius: 8px;
-      padding: 13px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: 'Inter', sans-serif;
-      cursor: pointer;
-      letter-spacing: 0.04em;
-      transition: background 0.2s, transform 0.1s;
-      width: 100%;
-      margin-top: 4px;
+      border: none; border-radius: 8px; padding: 13px; font-size: 14px;
+      font-weight: 500; font-family: 'Inter', sans-serif; cursor: pointer;
+      letter-spacing: 0.04em; transition: background 0.2s, transform 0.1s;
+      width: 100%; margin-top: 4px;
     }
     .ga-btn-primary { background: var(--gold); color: #1a1614; }
     .ga-btn-primary:hover { background: var(--gold-hover); }
     .ga-btn-primary:active { transform: scale(0.98); }
     .ga-btn-secondary {
-      background: none;
-      border: 0.5px solid var(--border-input);
-      color: var(--text-muted);
-      margin-top: 12px;
+      background: none; border: 0.5px solid var(--border-input);
+      color: var(--text-muted); margin-top: 8px;
     }
     .ga-btn-secondary:hover { border-color: rgba(201,169,110,0.4); color: var(--gold); }
-
-    .ga-hint {
-      font-size: 12px;
-      color: var(--text-dimmer);
-      text-align: center;
-      margin-top: 18px;
-      line-height: 1.65;
+    .ga-btn-ghost {
+      background: none; border: none; color: var(--text-dim);
+      font-size: 12px; font-family: 'Inter', sans-serif;
+      cursor: pointer; text-decoration: underline; padding: 4px 0;
+      letter-spacing: 0;
     }
+    .ga-btn-ghost:hover { color: var(--gold); }
+
+    .ga-hint { font-size: 12px; color: var(--text-dimmer); text-align: center; margin-top: 16px; line-height: 1.65; }
     .ga-hint b { color: var(--text-dim); font-weight: 400; }
 
-    /* ── WELCOME STATE ── */
-    .ga-welcome {
-      display: none;
-      text-align: center;
-      padding: 16px 0;
-    }
-    .ga-welcome-art {
-      font-size: 48px;
-      margin-bottom: 20px;
-      display: block;
-    }
-    .ga-welcome h2 {
+    /* VERIFY PANEL */
+    .ga-verify { display: none; flex-direction: column; gap: 16px; }
+    .ga-verify.visible { display: flex; }
+
+    .ga-verify-header { text-align: center; padding: 8px 0 4px; }
+    .ga-verify-icon { font-size: 36px; display: block; margin-bottom: 12px; }
+    .ga-verify-title {
       font-family: 'Playfair Display', serif;
-      font-size: 24px;
+      font-size: 20px; color: var(--text-primary);
+      font-weight: 400; margin-bottom: 8px;
+    }
+    .ga-verify-sub { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+    .ga-verify-email { color: var(--gold); font-weight: 500; }
+
+    /* 6-digit code input */
+    .ga-code-wrap {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin: 4px 0;
+    }
+    .ga-code-digit {
+      width: 48px; height: 56px;
+      background: var(--bg-input);
+      border: 0.5px solid var(--border-input);
+      border-radius: 10px;
+      font-size: 22px;
+      font-weight: 500;
       color: var(--text-primary);
-      font-weight: 400;
-      margin-bottom: 10px;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      caret-color: var(--gold);
     }
-    .ga-welcome p {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.65;
-      margin-bottom: 16px;
+    .ga-code-digit:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,169,110,0.12); }
+    .ga-code-digit.filled { border-color: rgba(201,169,110,0.5); }
+
+    .ga-resend-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-dimmer);
     }
+    .ga-timer { color: var(--gold); font-weight: 500; min-width: 28px; }
+
+    /* WELCOME */
+    .ga-welcome { display: none; text-align: center; padding: 16px 0; }
+    .ga-welcome-art { font-size: 48px; margin-bottom: 20px; display: block; }
+    .ga-welcome h2 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--text-primary); font-weight: 400; margin-bottom: 10px; }
+    .ga-welcome p { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px; }
     .ga-badge {
-      display: inline-block;
-      padding: 5px 16px;
-      background: rgba(201,169,110,0.12);
-      border: 0.5px solid rgba(201,169,110,0.3);
-      border-radius: 20px;
-      font-size: 11px;
-      color: var(--gold);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      display: inline-block; padding: 5px 16px;
+      background: rgba(201,169,110,0.12); border: 0.5px solid rgba(201,169,110,0.3);
+      border-radius: 20px; font-size: 11px; color: var(--gold);
+      letter-spacing: 0.08em; text-transform: uppercase;
     }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 700px) {
       .ga-left { display: none; }
       .ga-right { width: 100%; padding: 36px 28px; }
       .ga-root { border-radius: 0; min-height: 100vh; }
       html, body { align-items: flex-start; }
+      .ga-code-digit { width: 40px; height: 50px; font-size: 20px; }
     }
   </style>
 </head>
@@ -295,23 +228,20 @@
 
 <main class="ga-root" role="main">
 
-  <!-- ── LEFT PANEL ── -->
+  <!-- LEFT PANEL -->
   <section class="ga-left" aria-label="Presentación">
     <div class="ga-blob ga-blob-1"></div>
     <div class="ga-blob ga-blob-2"></div>
     <div class="ga-blob ga-blob-3"></div>
-
     <div class="ga-logo">
       <div class="ga-logo-icon" aria-hidden="true">🎨</div>
       <div class="ga-logo-name">gestión<span>ARTE</span></div>
     </div>
-
     <div class="ga-hero">
       <p class="ga-eyebrow">Plataforma para creativos</p>
       <h1 class="ga-title">Tu arte merece<br>una gestión <em>a su altura</em></h1>
       <p class="ga-body">Administrá proyectos, clientes y tareas desde un solo lugar, diseñado para artistas y freelancers creativos.</p>
     </div>
-
     <div class="ga-features" aria-label="Funcionalidades">
       <div class="ga-feature"><div class="ga-dot"></div>Proyectos y tareas en tablero visual</div>
       <div class="ga-feature"><div class="ga-dot"></div>CRM de clientes integrado</div>
@@ -320,7 +250,7 @@
     </div>
   </section>
 
-  <!-- ── RIGHT PANEL ── -->
+  <!-- RIGHT PANEL -->
   <section class="ga-right" aria-label="Autenticación">
 
     <div id="ga-tabs" class="ga-tabs" role="tablist">
@@ -330,24 +260,22 @@
 
     <div id="ga-msg" class="ga-msg" role="alert" aria-live="polite"></div>
 
-    <!-- LOGIN FORM -->
-    <form id="form-login" class="ga-form" onsubmit="handleLogin(event)" novalidate aria-label="Formulario de ingreso">
+    <!-- LOGIN -->
+    <form id="form-login" class="ga-form" onsubmit="handleLogin(event)" novalidate>
       <div class="ga-field">
         <label class="ga-label" for="login-email">Correo electrónico</label>
-        <input class="ga-input" type="email" id="login-email" name="email"
-               placeholder="tu@email.com" required autocomplete="email" />
+        <input class="ga-input" type="email" id="login-email" placeholder="tu@email.com" required autocomplete="email" />
       </div>
       <div class="ga-field">
         <label class="ga-label" for="login-pass">Contraseña</label>
-        <input class="ga-input" type="password" id="login-pass" name="password"
-               placeholder="••••••••" required autocomplete="current-password" />
+        <input class="ga-input" type="password" id="login-pass" placeholder="••••••••" required autocomplete="current-password" />
       </div>
       <button class="ga-btn ga-btn-primary" type="submit">Ingresar a la plataforma</button>
       <p class="ga-hint"><b>Demo:</b> usuario <b>admin</b> · contraseña <b>admin</b></p>
     </form>
 
-    <!-- REGISTER FORM -->
-    <form id="form-register" class="ga-form hidden" onsubmit="handleRegister(event)" novalidate aria-label="Formulario de registro">
+    <!-- REGISTER -->
+    <form id="form-register" class="ga-form hidden" onsubmit="handleRegister(event)" novalidate>
       <div class="ga-row">
         <div class="ga-field">
           <label class="ga-label" for="reg-name">Nombre</label>
@@ -370,10 +298,44 @@
         <label class="ga-label" for="reg-pass2">Confirmar contraseña</label>
         <input class="ga-input" type="password" id="reg-pass2" placeholder="Repetí la contraseña" required />
       </div>
-      <button class="ga-btn ga-btn-primary" type="submit">Crear mi cuenta</button>
+      <button class="ga-btn ga-btn-primary" type="submit">Continuar con el registro</button>
     </form>
 
-    <!-- WELCOME STATE -->
+    <!-- VERIFY EMAIL -->
+    <div id="panel-verify" class="ga-verify" role="region" aria-label="Verificación de email">
+      <div class="ga-verify-header">
+        <span class="ga-verify-icon" aria-hidden="true">✉️</span>
+        <h2 class="ga-verify-title">Verificá tu correo</h2>
+        <p class="ga-verify-sub">
+          Enviamos un código de 6 dígitos a<br>
+          <span class="ga-verify-email" id="verify-email-label">tu@email.com</span>
+        </p>
+      </div>
+
+      <!-- 6 digit inputs -->
+      <div class="ga-code-wrap" role="group" aria-label="Código de verificación">
+        <input class="ga-code-digit" type="text" inputmode="numeric" maxlength="1" id="d0" aria-label="Dígito 1" />
+        <input class="ga-code-digit" type="text" inputmode="numeric" maxlength="1" id="d1" aria-label="Dígito 2" />
+        <input class="ga-code-digit" type="text" inputmode="numeric" maxlength="1" id="d2" aria-label="Dígito 3" />
+        <input class="ga-code-digit" type="text" inputmode="numeric" maxlength="1" id="d3" aria-label="Dígito 4" />
+        <input class="ga-code-digit" type="text" inputmode="numeric" maxlength="1" id="d4" aria-label="Dígito 5" />
+        <input class="ga-code-digit" type="text" inputmode="numeric" maxlength="1" id="d5" aria-label="Dígito 6" />
+      </div>
+
+      <button class="ga-btn ga-btn-primary" onclick="verifyCode()">Verificar código</button>
+
+      <div class="ga-resend-row">
+        <span>¿No llegó el correo?</span>
+        <button class="ga-btn-ghost" id="btn-resend" onclick="resendCode()" disabled>
+          Reenviar código
+        </button>
+        <span class="ga-timer" id="timer-label">0:30</span>
+      </div>
+
+      <button class="ga-btn ga-btn-secondary" onclick="backToRegister()">← Volver al registro</button>
+    </div>
+
+    <!-- WELCOME -->
     <div id="ga-welcome" class="ga-welcome" role="status" aria-live="polite">
       <span class="ga-welcome-art" aria-hidden="true">🎨</span>
       <h2 id="welcome-name">¡Bienvenido!</h2>
@@ -386,41 +348,40 @@
 </main>
 
 <script>
-  /* ── USUARIOS DEL SISTEMA ── */
+  /* ─────────────────────────────────────────
+     USUARIOS DEL SISTEMA
+  ───────────────────────────────────────── */
   const SYSTEM_USERS = [
-    {
-      email: 'admin',
-      password: 'admin',
-      name: 'Administrador',
-      role: 'Administrador · Acceso total',
-      isAdmin: true
-    },
-    {
-      email: 'admin@gestionarte.com',
-      password: 'admin',
-      name: 'Administrador',
-      role: 'Administrador · Acceso total',
-      isAdmin: true
-    }
+    { email: 'admin',                   password: 'admin', name: 'Administrador', role: 'Administrador · Acceso total', isAdmin: true },
+    { email: 'admin@gestionarte.com',   password: 'admin', name: 'Administrador', role: 'Administrador · Acceso total', isAdmin: true }
   ];
+  const sessionUsers = [];   // usuarios registrados en esta sesión
 
-  /* Usuarios registrados en sesión (en producción esto va a la BD) */
-  const sessionUsers = [];
+  /* ─────────────────────────────────────────
+     ESTADO DE VERIFICACIÓN
+  ───────────────────────────────────────── */
+  let pendingUser   = null;   // datos del usuario en proceso de registro
+  let verifyCode6   = null;   // código generado
+  let timerInterval = null;
 
-  /* ── TAB SWITCHING ── */
+  /* ─────────────────────────────────────────
+     TABS
+  ───────────────────────────────────────── */
   function showTab(tab) {
     const tabs = document.querySelectorAll('.ga-tab');
     tabs[0].classList.toggle('active', tab === 'login');
-    tabs[0].setAttribute('aria-selected', tab === 'login');
+    tabs[0].setAttribute('aria-selected', String(tab === 'login'));
     tabs[1].classList.toggle('active', tab === 'register');
-    tabs[1].setAttribute('aria-selected', tab === 'register');
-
+    tabs[1].setAttribute('aria-selected', String(tab === 'register'));
     document.getElementById('form-login').classList.toggle('hidden', tab !== 'login');
     document.getElementById('form-register').classList.toggle('hidden', tab !== 'register');
+    document.getElementById('panel-verify').classList.remove('visible');
     clearMsg();
   }
 
-  /* ── MENSAJES ── */
+  /* ─────────────────────────────────────────
+     MENSAJES
+  ───────────────────────────────────────── */
   function showMsg(text, type) {
     const el = document.getElementById('ga-msg');
     el.textContent = text;
@@ -432,25 +393,22 @@
     el.className = 'ga-msg';
   }
 
-  /* ── LOGIN ── */
+  /* ─────────────────────────────────────────
+     LOGIN
+  ───────────────────────────────────────── */
   function handleLogin(e) {
     e.preventDefault();
     const email    = document.getElementById('login-email').value.trim();
     const password = document.getElementById('login-pass').value;
-
-    const all  = [...SYSTEM_USERS, ...sessionUsers];
-    const user = all.find(u =>
-      u.email.toLowerCase() === email.toLowerCase() && u.password === password
-    );
-
-    if (!user) {
-      showMsg('Correo o contraseña incorrectos. Verificá tus datos e intentá de nuevo.', 'error');
-      return;
-    }
+    const all      = [...SYSTEM_USERS, ...sessionUsers];
+    const user     = all.find(u => u.email.toLowerCase() === email.toLowerCase() && u.password === password);
+    if (!user) { showMsg('Correo o contraseña incorrectos.', 'error'); return; }
     enterPlatform(user);
   }
 
-  /* ── REGISTRO ── */
+  /* ─────────────────────────────────────────
+     REGISTER — paso 1: validar y generar código
+  ───────────────────────────────────────── */
   function handleRegister(e) {
     e.preventDefault();
     const name     = document.getElementById('reg-name').value.trim();
@@ -459,45 +417,219 @@
     const pass     = document.getElementById('reg-pass').value;
     const pass2    = document.getElementById('reg-pass2').value;
 
-    if (pass !== pass2) {
-      showMsg('Las contraseñas no coinciden. Verificalas e intentá de nuevo.', 'error');
-      return;
-    }
+    if (pass !== pass2)  { showMsg('Las contraseñas no coinciden.', 'error'); return; }
+    if (pass.length < 6) { showMsg('La contraseña debe tener al menos 6 caracteres.', 'error'); return; }
 
     const all = [...SYSTEM_USERS, ...sessionUsers];
     if (all.find(u => u.email.toLowerCase() === email.toLowerCase())) {
-      showMsg('Ese correo ya tiene una cuenta registrada. Ingresá desde la pestaña anterior.', 'error');
+      showMsg('Ese correo ya tiene una cuenta registrada.', 'error');
       return;
     }
 
-    const newUser = {
-      email,
-      password: pass,
-      name: name + ' ' + lastname,
-      role: 'Usuario',
-      isAdmin: false
-    };
-    sessionUsers.push(newUser);
-    enterPlatform(newUser);
+    pendingUser = { email, password: pass, name: name + ' ' + lastname, role: 'Usuario', isAdmin: false };
+    sendVerificationCode();
+    showVerifyPanel();
   }
 
-  /* ── MOSTRAR BIENVENIDA ── */
+  /* ─────────────────────────────────────────
+     GENERAR Y "ENVIAR" CÓDIGO
+  ───────────────────────────────────────── */
+  function generateCode() {
+    return String(Math.floor(100000 + Math.random() * 900000));
+  }
+
+  function sendVerificationCode() {
+    verifyCode6 = generateCode();
+    // En producción: POST /api/v1/auth/send-verification-code { email, code }
+    // En demo: mostramos el código en consola y en un tooltip informativo
+    console.log('%c[gestionARTE] Código de verificación: ' + verifyCode6, 'color:#c9a96e; font-size:16px; font-weight:bold;');
+  }
+
+  /* ─────────────────────────────────────────
+     MOSTRAR PANEL DE VERIFICACIÓN
+  ───────────────────────────────────────── */
+  function showVerifyPanel() {
+    document.getElementById('form-register').classList.add('hidden');
+    document.getElementById('ga-tabs').style.display = 'none';
+    clearMsg();
+
+    document.getElementById('verify-email-label').textContent = pendingUser.email;
+    document.getElementById('panel-verify').classList.add('visible');
+
+    // Limpiar dígitos
+    for (let i = 0; i < 6; i++) {
+      const d = document.getElementById('d' + i);
+      d.value = '';
+      d.classList.remove('filled');
+    }
+    document.getElementById('d0').focus();
+
+    // Mostrar código en panel (modo demo) con mensaje informativo
+    showMsg(
+      'Modo demo: el código es ' + verifyCode6 + ' (en producción se envía al correo).',
+      'info'
+    );
+
+    startTimer(30);
+  }
+
+  /* ─────────────────────────────────────────
+     INPUTS DE CÓDIGO — navegación automática
+  ───────────────────────────────────────── */
+  document.addEventListener('DOMContentLoaded', () => {
+    for (let i = 0; i < 6; i++) {
+      const el = document.getElementById('d' + i);
+
+      el.addEventListener('input', () => {
+        const val = el.value.replace(/\D/g, '');
+        el.value  = val ? val[0] : '';
+        el.classList.toggle('filled', !!el.value);
+        if (el.value && i < 5) document.getElementById('d' + (i + 1)).focus();
+        if (isCodeComplete()) autoVerify();
+      });
+
+      el.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Backspace' && !el.value && i > 0) {
+          document.getElementById('d' + (i - 1)).focus();
+        }
+        if (ev.key === 'ArrowLeft'  && i > 0) document.getElementById('d' + (i - 1)).focus();
+        if (ev.key === 'ArrowRight' && i < 5) document.getElementById('d' + (i + 1)).focus();
+      });
+
+      el.addEventListener('paste', (ev) => {
+        ev.preventDefault();
+        const text = (ev.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '').slice(0, 6);
+        for (let j = 0; j < text.length; j++) {
+          const target = document.getElementById('d' + j);
+          if (target) { target.value = text[j]; target.classList.add('filled'); }
+        }
+        const last = Math.min(text.length, 5);
+        document.getElementById('d' + last).focus();
+        if (text.length === 6) autoVerify();
+      });
+    }
+  });
+
+  function isCodeComplete() {
+    for (let i = 0; i < 6; i++) {
+      if (!document.getElementById('d' + i).value) return false;
+    }
+    return true;
+  }
+
+  function getEnteredCode() {
+    let code = '';
+    for (let i = 0; i < 6; i++) code += document.getElementById('d' + i).value;
+    return code;
+  }
+
+  /* ─────────────────────────────────────────
+     VERIFICAR CÓDIGO
+  ───────────────────────────────────────── */
+  function autoVerify() {
+    setTimeout(() => { if (isCodeComplete()) verifyCode(); }, 300);
+  }
+
+  function verifyCode() {
+    const entered = getEnteredCode();
+    if (entered.length < 6) { showMsg('Ingresá los 6 dígitos del código.', 'error'); return; }
+
+    if (entered !== verifyCode6) {
+      showMsg('Código incorrecto. Revisá el código e intentá de nuevo.', 'error');
+      // Sacudir visualmente los inputs
+      const wrap = document.querySelector('.ga-code-wrap');
+      wrap.style.animation = 'none';
+      wrap.offsetHeight;
+      for (let i = 0; i < 6; i++) {
+        const d = document.getElementById('d' + i);
+        d.value = ''; d.classList.remove('filled');
+      }
+      document.getElementById('d0').focus();
+      return;
+    }
+
+    // Código correcto: registrar usuario
+    clearTimer();
+    sessionUsers.push(pendingUser);
+    showMsg('', '');
+    document.getElementById('panel-verify').classList.remove('visible');
+    enterPlatform(pendingUser);
+    pendingUser  = null;
+    verifyCode6  = null;
+  }
+
+  /* ─────────────────────────────────────────
+     REENVÍO Y TIMER
+  ───────────────────────────────────────── */
+  function startTimer(seconds) {
+    clearTimer();
+    let remaining = seconds;
+    const btn   = document.getElementById('btn-resend');
+    const label = document.getElementById('timer-label');
+    btn.disabled = true;
+    label.style.display = 'inline';
+
+    timerInterval = setInterval(() => {
+      remaining--;
+      label.textContent = '0:' + String(remaining).padStart(2, '0');
+      if (remaining <= 0) {
+        clearTimer();
+        btn.disabled        = false;
+        label.style.display = 'none';
+      }
+    }, 1000);
+  }
+
+  function clearTimer() {
+    if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+  }
+
+  function resendCode() {
+    sendVerificationCode();
+    showMsg(
+      'Código reenviado. Modo demo: el nuevo código es ' + verifyCode6 + '.',
+      'info'
+    );
+    for (let i = 0; i < 6; i++) {
+      const d = document.getElementById('d' + i);
+      d.value = ''; d.classList.remove('filled');
+    }
+    document.getElementById('d0').focus();
+    startTimer(30);
+  }
+
+  /* ─────────────────────────────────────────
+     VOLVER AL REGISTRO
+  ───────────────────────────────────────── */
+  function backToRegister() {
+    clearTimer();
+    pendingUser = null; verifyCode6 = null;
+    document.getElementById('panel-verify').classList.remove('visible');
+    document.getElementById('ga-tabs').style.display = 'flex';
+    document.getElementById('form-register').classList.remove('hidden');
+    clearMsg();
+  }
+
+  /* ─────────────────────────────────────────
+     BIENVENIDA
+  ───────────────────────────────────────── */
   function enterPlatform(user) {
     document.getElementById('form-login').classList.add('hidden');
     document.getElementById('form-register').classList.add('hidden');
+    document.getElementById('panel-verify').classList.remove('visible');
     document.getElementById('ga-tabs').style.display = 'none';
     clearMsg();
 
     document.getElementById('welcome-name').textContent = '¡Bienvenido, ' + user.name + '!';
     document.getElementById('welcome-msg').textContent  = user.isAdmin
       ? 'Tenés acceso completo a todas las funcionalidades de gestionARTE.'
-      : 'Tu cuenta está activa. Ya podés comenzar a gestionar tus proyectos creativos.';
+      : 'Tu cuenta fue verificada exitosamente. Ya podés comenzar a gestionar tus proyectos.';
     document.getElementById('welcome-role').textContent = user.role;
     document.getElementById('ga-welcome').style.display = 'block';
   }
 
-  /* ── LOGOUT ── */
   function handleLogout() {
+    clearTimer();
     document.getElementById('ga-welcome').style.display = 'none';
     document.getElementById('ga-tabs').style.display    = 'flex';
     document.getElementById('login-email').value        = '';
